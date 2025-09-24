@@ -1,0 +1,549 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --primary: #391cbb;
+    --secondary: #4cc4e2;
+    --dark: #222;
+    --light: #f8f8f8;
+    --text: #333;
+    --white: #fff;
+    --success: #4CAF50;
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+	font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+body{
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+.tete1 {
+    background-color: var(--white);
+    padding: 1rem 5%;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+    position: relative;
+	right: 50px;
+	top: 1px;
+}
+
+.logo img:hover {
+    transform: rotate(15deg);
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    color: var(--primary);
+    margin: 0;
+    font-weight: 700;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation */
+.tete1 ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.tete1 ul li a {
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    padding: 0.5rem 0;
+    position: relative;
+    transition: var(--transition);
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    font-size: 16px;
+}
+
+.tete1 ul li a:hover,
+.tete1 ul li a.active {
+    color: var(--primary);
+}
+
+.tete1 ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    transition: width 0.3s ease;
+}
+
+.tete1 ul li a:hover::after {
+    width: 100%;
+}
+
+/* Button Styles */
+.tete1 button {
+    background: linear-gradient(90deg, var(--primary), var(--secondary));
+    color: var(--white);
+    border: none;
+    padding: 0.75rem 1.75rem;
+    border-radius: 50px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    box-shadow: 0 4px 8px rgba(57, 28, 187, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.tete1 button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(57, 28, 187, 0.3);
+    background: linear-gradient(90deg, var(--secondary), var(--primary));
+}
+
+.tete1 button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: 0.5s;
+}
+
+.tete1 button:hover::before {
+    left: 100%;
+}
+
+.tete1 button a {
+    color: inherit;
+    text-decoration: none;
+}
+body {
+	
+	margin: 0;
+	font-size: 80%;
+	/*font-weight: bold;*/
+	background-color: #f8f8f8;
+	height : 930px;
+	
+	
+	}
+	body, h1, h2, h3, h4, h5, h6, p, a, span, li, button, input, textarea {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+
+	}
+
+
+h2 {
+	
+	color: #000;
+	margin: 0px;
+	padding: 0px 0px 0px 15px;
+}
+	
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	
+	}
+
+img {
+    border: none;
+} 
+option{
+width : 150px;
+}
+pre{
+text-align : left;
+font-size: 15px;
+}
+
+
+.corp
+{
+text-align: center;
+font-size: 1.2em;
+height:650px;
+width:997px;
+position : absolute;
+top : 205px;
+left : 184px;
+backdrop-filter: blur(15px);
+
+}
+form{
+	font-weight: 200;
+}
+
+.menu a {
+text-decoration : none;
+color : white;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.connexion2 a
+{
+text-decoration : none;
+color : black;
+}
+
+.position_titre{
+position : relative;
+top : -11px;
+left : 165px;
+}
+
+.formulaire {
+height : auto;
+width : 470px;
+font-size : 1.1em;
+position : relative;
+top : 108px;
+left : 200px;
+font-weight: bold;
+}
+
+#monmenu {
+font-size: 90%;
+font-weight:bold;
+color: #0077b5;
+
+}
+
+#monmenu ul ul {
+display: none;
+ position: absolute;
+/* la position des sous menu par rapport a leurs menu superieur  */
+ top: 0px;
+ 
+
+ }
+ 
+ #monmenu ul li a{ 
+ background-color: #1c2cbb;
+ display: flex;
+ text-align: center;
+ height: 30px;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+z-index: 1;
+ top: 0px;
+ }
+ 
+ #monmenu ul li a:hover{ 
+background: #000;
+transform: scale(1.010);
+transition: 0.3s;
+ 
+}
+ 
+#monmenu li {
+ position: relative; 
+ width: 160px; 
+ list-style-type: none;
+ }
+
+#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3{
+display: block;
+z-index :10;
+}
+
+
+
+/*#monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4, #monmenu li:hover ul.niveau2, #monmenu li li:hover ul.niveau3,#monmenu li li li:hover ul.niveau4 {*/
+.tete{
+	background-color: #ffffff;
+	height: 50px;
+}
+.niveau1{
+	display: flex;
+	justify-content: center;
+	
+
+}
+.niveau3{
+	left: 160px;
+	
+
+}
+
+
+.btn:active{
+	box-shadow: inset0px 4px 5px orange, inset 0px -4px 5px orangered;
+	transform: scale(0.995);
+}
+
+.btn:hover{
+	cursor: pointer;
+}
+.log{
+	position: relative;
+
+}
+label{
+	position: absolute;
+	color: gray;
+	pointer-events: none;
+	background-color: transparent;
+	left: 15px;
+	transform: translateY(0.6rem);
+	transition: all 0.3s ease;
+}
+
+.ip{
+	padding: 10px 8px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+
+.log input:focus + label, .log input:not(:placeholder-shown) + label{
+	top: -18px;
+	left: 5px;
+	font-size: 12px;
+	background: #ffffff;
+	padding: 0 5px;
+	color: #007bff;
+	border-radius: 35px;
+	height: 18px;
+}
+.log input:focus{
+	border-color: #007bff;
+}
+.arrp{
+	background: url(back.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	min-height: 120vh;
+    
+	
+}
+
+footer {
+    background: linear-gradient(135deg, #1a1a2e 0%, #223d86 100%);
+    color: #fff;
+    padding:  2%;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: linear-gradient(90deg, #391cbb 0%, #4cc4e2 100%);
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    position: relative;
+    z-index: 2;
+}
+
+.footer-column {
+    margin-bottom: 1px;
+}
+
+.footer-column h3 {
+    font-size: 1.3rem;
+    margin-bottom: 1.5rem;
+    color: #4cc4e2;
+    position: relative;
+    display: inline-block;
+}
+
+.footer-column h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: #4cc4e2;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 0.8rem;
+}
+
+.footer-column ul li a {
+    color: #ddd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+}
+
+.footer-column ul li a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #4cc4e2;
+    transition: width 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+    color: #fff;
+    transform: translateX(5px);
+}
+
+.footer-column ul li a:hover::after {
+    width: 100%;
+}
+
+/* Section Réseaux Sociaux */
+.social-section {
+    text-align: center;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background: rgba(255, 255, 255, 0.034);
+    border-radius: 50%;
+    color: #fff;
+    font-size: 1.2rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.social-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(45, 90, 238, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.social-links a:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.social-links a:hover::before {
+    left: 100%;
+}
+
+#facebook:hover { background: #1877f2; 
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  -webkit-background-clip: text; }
+#twitter:hover { background: #1da1f2;
+                 -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  -webkit-background-clip: text; }
+#instagram:hover { 
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+#linkedin:hover { background: #0077b5;
+                  -webkit-text-fill-color: transparent;
+                  background-clip: text;
+                  -webkit-background-clip: text; }
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #aaa;
+    font-size: 0.9rem;
+    position: relative;
+}
+
+.copyright::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #4cc4e2, transparent);
+}
+
+/* Effet de particules (optionnel) */
+.footer-particle {
+    position: absolute;
+    background: rgba(76, 196, 226, 0.3);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-column {
+        text-align: center;
+    }
+    
+    .footer-column h3::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

@@ -1,0 +1,64 @@
+h1{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(90deg, #391cbb, #4cc4e2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.pres{
+    position: relative;
+    left: 20px;
+    bottom: 50px;
+    color: #391cbb;
+}
+.selec0 {
+  position: relative;
+  bottom: 240px;
+  left: 100px;
+  width: 100%;
+  max-width: 300px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+.op{
+  width: 62%;
+  appearance: base-select;
+  overflow: hidden;
+  height: 40px;
+  padding: 7px 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #111827;
+  background-color: #ffffff;
+  border: 1px solid #E5E7EB;
+  border-radius: 35px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  outline: none;
+}
+.op:hover {
+  border-color: #9CA3AF;
+}
+.op:focus {
+  border-color: #3B82F6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+.select-arrow {
+  position: relative;
+  bottom: 20px;
+  right: -190px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10px;
+  height: 10px;
+  transition: transform 0.2s ease;
+}
+.op:focus + .select-arrow {
+  transform: translateY(-50%) rotate(180deg);
+}
