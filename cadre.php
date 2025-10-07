@@ -84,7 +84,7 @@ $data=mysqli_query($conn,"select distinct nom from classe");
                 <h1>PRONOTE<br>UNIVERSITY</h1>
             </div>
             <ul>
-                <li><a href="home.php" class="men">Accueil</a></li>
+                <li><a href="Mahes/index.php" class="men">Accueil</a></li>
                 <li><a href="cadre.php" class="men">Nos services</a></li>
                 <li><a href="apropos.php" class="men">A propos</a></li>
                 
